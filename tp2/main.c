@@ -42,4 +42,22 @@ void initEmployees(Employee vec[], int len)
     }
 }
 
+/** \brief add in a existing list of employees the values received as parameters
+ * in the first empty position
+ * \param list employee*
+ * \param len int
+ * \param id int
+ * \param name[] char
+ * \param lastName[] char
+ * \param salary float
+ * \param sector int
+ * \return int Return (-1) if Error [Invalid length or NULL pointer or without
+ *  free space] - (0) if Ok
+ */
+int addEmployee(Employee* list, int len, int id, char name[],char
+lastName[],float salary,int sector)
+{
+ return -1;
+}
+
 
