@@ -4,9 +4,9 @@
 #include <conio.h>
 #include "ArrayEmployes.h"
 
-#define TAM 1000 //Nómina
+#define ELEMENTS 1000 //Nómina
 
-struct
+typedef struct
 {
     int id;
     char name[51];
@@ -14,14 +14,14 @@ struct
     float salary;
     int sector;
     int isEmpty;
-}typedef Employee;
+}Employee;
 
-void initEmployees(Employee vec[], int len);
+void initEmployees(Employee* list, int len);
 
 int main()
 {
-    Employee list[TAM];
-    initEmployees(list, TAM);
+    Employee arrayEmployees[ELEMENTS];
+    initEmployees(arrayEmployees, ELEMENTS);
     return 0;
 }
 
@@ -33,12 +33,12 @@ int main()
  * \return int Return (-1) if Error [Invalid length or NULL pointer] - (0) if Ok
  *
  */
-void initEmployees(Employee vec[], int len)
+void initEmployees(Employee* list, int len)
 {
     int i;
     for(i=0; i<len; i++)
     {
-        vec[i].isEmpty = 0;
+         list[i].isEmpty = 0;
     }
 }
 
