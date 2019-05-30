@@ -56,6 +56,7 @@ int menu()
     printf("2. MODIFICAR.\n");
     printf("3. BAJA.\n");
     printf("4. INFORMAR.\n");
+    printf("5. SALIR.\n");
 
     printf("\nIngrese opcion: ");
     scanf("%d", &option);
@@ -463,3 +464,4 @@ int noHayEmpleados(Employee* list, int len)
     }
     return indice;
 }
+

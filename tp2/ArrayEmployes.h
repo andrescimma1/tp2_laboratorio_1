@@ -35,3 +35,4 @@ int removeEmployee(Employee* list, int len, int id);
 int sortEmployees(Employee* list, int len, int order);
 int salarios(Employee* list, int len);
 int noHayEmpleados(Employee* list, int len);
+

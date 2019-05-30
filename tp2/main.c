@@ -93,6 +93,12 @@ int main()
             }
             system("pause");
             break;
+        case 5:
+            printf("\nDesea seguir? (s/n): ");
+            fflush(stdin);
+            scanf("%c", &follow);
+            system("pause");
+            break;
         default:
             printf("\nOpcion incorrecta\n\n");
             system("pause");
